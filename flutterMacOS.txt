@@ -1,0 +1,10 @@
+FLUTTER MACOS
+
+sudo gedit ~/.zshrc
+
+
+export FLUTTER="$HOME/flutter"
+export PATH="$FLUTTER/bin:$PATH"
+
+
+

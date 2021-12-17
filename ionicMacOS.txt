@@ -1,0 +1,25 @@
+
+IONIC MACOS
+
+
+npm install -g @ionic/cli
+npm install @ionic/angular@latest --save
+ng add @ionic/angular
+
+
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+
+
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+ionic start miapp sidemenu --capacitor
+
+ionic capacitor build android
+
+ionic capacitor run android -l --external
+
+ionic start demo sidemenu --type=angular --capacitor

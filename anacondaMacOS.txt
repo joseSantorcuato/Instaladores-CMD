@@ -1,0 +1,21 @@
+ANACONDA MACOS
+
+brew install --cask anaconda
+
+sudo gedit ~/.zshrc
+
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+source ~/.zshrc
+
+conda init zsh
+
+conda create -n amb39 python=3.9.5 anaconda
+
+conda activate amb39
+
+conda deactivate
+
+pip install --upgrade pip
+
+

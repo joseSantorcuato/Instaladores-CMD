@@ -1,0 +1,18 @@
+PYENV MACOS
+
+brew install openssl readline sqlite3 xz zlib
+
+sudo gedit ~/.zshrc
+
+echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
+
+pyenv install -l
+
+pyenv install 3.9.5
+
+pyenv global 3.9.5
+
+pyenv versions
+
+
+pip install --upgrade pip
