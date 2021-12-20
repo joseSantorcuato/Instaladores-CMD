@@ -1,0 +1,29 @@
+ANACONDA UBUNTU 
+
+sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+
+
+https://www.anaconda.com/products/individual //descargar .sh
+
+Ejemplo:
+
+Anaconda3-2021.11-Linux-x86_64.sh
+
+INSTALACIÓN
+
+sha256sum Anaconda3-2021.11-Linux-x86_64.sh
+
+bash Anaconda3-2021.11-Linux-x86_64.sh
+
+source ~/.bashrc
+
+anaconda-navigator
+
+conda create -n amb39 python=3.9.5 anaconda
+
+conda activate amb39
+
+pip install --upgrade pip
+
+conda deactivate
+
