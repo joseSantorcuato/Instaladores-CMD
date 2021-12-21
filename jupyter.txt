@@ -1,0 +1,16 @@
+JUPITER-ANACONDA
+
+conda create -n amb39 python=3.9.5 anaconda
+
+conda update anaconda-navigator
+
+anaconda-navigator
+
+conda activate amb39
+
+pip install --upgrade pip
+
+pip install jupyter
+
+conda deactivate
+

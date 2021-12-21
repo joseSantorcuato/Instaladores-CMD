@@ -17,6 +17,8 @@ bash Anaconda3-2021.11-Linux-x86_64.sh
 
 source ~/.bashrc
 
+conda update anaconda-navigator
+
 anaconda-navigator
 
 conda create -n amb39 python=3.9.5 anaconda
