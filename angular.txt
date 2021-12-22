@@ -1,0 +1,7 @@
+
+IONIC MACOS
+
+* Tener instalados Brew (MacOS) pyenv, python, node (revisar dependencias).
+
+npm install -g @angular/cli@12
+
