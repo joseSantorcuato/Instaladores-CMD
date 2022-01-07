@@ -1,4 +1,4 @@
-GIT LINUX,MacOS
+GIT LINUX,MacOS.
 
 git config --global color.ui true 
 git config --global user.name "xxxxxxxx" 
