@@ -1,14 +1,10 @@
 ANACONDA MACOS
 
-brew install --cask anaconda
+https://www.anaconda.com/products/individual 
 
-sudo gedit ~/.zshrc
+Anaconda3-2021.11-MacOSX-x86_64
 
-export PATH="/usr/local/anaconda3/bin:$PATH"
-
-source ~/.zshrc
-
-conda init zsh
+bash Anaconda3-2021.11-MacOSX-x86_64
 
 conda create -n amb39 python=3.9.5 anaconda
 
