@@ -1,6 +1,6 @@
 =====================================================================================================================================
 
-INSTALACIÓN DE AMBIENTE PARA DESARROLLO DE MACHINE LEARNING | DEEP LEARNING | REDES NEURONALES, NLP | COMPUTER VISION, AUDIO ANALYSIS.
+INSTALACIÓN DE AMBIENTE PARA DESARROLLO DE MACHINE LEARNING | DEEP LEARNING | REDES NEURONALES | NLP | COMPUTER VISION | AUDIO ANALYSIS.
 
 =====================================================================================================================================
 ======= 
