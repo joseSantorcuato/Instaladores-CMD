@@ -1,7 +1,26 @@
-ANACONDA UBUNTU 
+=====================================================================================================================================
+
+INSTALACIÓN DE ANACONDA EN MACOS => BIGSUR
+
+=====================================================================================================================================
+======= 
+
+
+
+AUTOR: JOSÉ LUIS SANTORCUATO TAPIA 2022
+=======================================
+
+
+
+1.INSTALACIÓN DEPENDENCIAS
+========================
 
 sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
 
+
+
+2. DESCARGA E INSTALACIÓN .SH
+==========================
 
 https://www.anaconda.com/products/individual //descargar .sh
 
@@ -21,7 +40,7 @@ conda update anaconda-navigator
 
 anaconda-navigator
 
-conda create -n amb39 python=3.9.5 anaconda
+conda create -n amb39 python=3.9.5 
 
 conda activate amb39
 
