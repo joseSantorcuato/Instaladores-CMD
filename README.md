@@ -7,9 +7,9 @@
 Cada archivo corresponde a una tarea: Instalaci{on de PYENV, Anaconda, módulos importantes, clonación de un ambiente tipo Colab para Jupyter instalación de CUDA y gráficas NVIDIA y label studio, para etiquetado y anotaciones de datasets.
 
 
-```
-Un resumen, y los archivos más importantes son los de Anaconda y CUDA, ahí viene todo lo necesario.
-```
+
+Un resumen, y los archivos más importantes son los de Anaconda y CUDA, ahí viene todo lo necesario, incluso la instalación de Jupyter.
+
 
 ### Otro subtítulo
 
