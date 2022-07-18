@@ -8,7 +8,7 @@ Cada archivo corresponde a una tarea: Instalaci{on de PYENV, Anaconda, módulos 
 
 
 ```
-Acá iré actualizando el listado de archivos.
+Un resumen, y los archivos más importantes son los de Anaconda y CUDA, ahí viene todo lo necesario.
 ```
 
 ### Otro subtítulo
