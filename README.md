@@ -1,4 +1,4 @@
-# Instalación de ambientes para Inteligencia articifial, machine learning, deep learning, redes neuronales, NLP, CV, audio analysis. WIP.
+# Instalación de ambientes para Inteligencia artificial, machine learning, deep learning, redes neuronales, NLP, CV, audio analysis. WIP.
 ## José Santorcuato T
 #### 2022
 
