@@ -13,9 +13,9 @@ Un resumen, y los archivos más importantes son los de Anaconda y CUDA, ahí vie
 
 ### Archivos
 
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
+* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
+* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
+* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
 * Permite hacer listas
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
