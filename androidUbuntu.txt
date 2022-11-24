@@ -1,0 +1,9 @@
+ANDROID LINUX UBUNTU
+sudo nano ~/.bashrc
+
+export ANDROID_HOME=/home/usuario/Android/Sdk
+export PATH=$PATH:/home/usuario/Android/Sdk/tools
+export PATH=$PATH:/home/usuario/Android/Sdk/platform-tools
+export PATH=$PATH:/home/usuario/Android/Sdk/emulator
+
+
