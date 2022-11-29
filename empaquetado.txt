@@ -1,0 +1,21 @@
+
+EMPAQUETADO ANDROID
+===================
+
+Ingresar a la carpeta del proyecto y ejecutar:
+
+npm install @capacitor/core
+
+npm install @capacitor/cli --save-dev
+
+npx cap init --web-dir=dist/tuApp                                          //revisar el package.json
+
+ng build
+
+npm install @capacitor/android
+
+npx cap add android
+
+npx cap copy android
+
+npx cap run android

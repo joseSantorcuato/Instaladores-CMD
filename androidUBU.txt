@@ -1,0 +1,20 @@
+INSTALACION BIMP PARA GIMP
+echo export CAPACITOR_ANDROID_STUDIO_PATH="/home/<username>/Android/Sdk/platform-tools" >> ~/.profile
+
+echo export ANDROID_HOME="/home/<username>/Android/Sdk" >> ~/.profile
+echo export PATH=$PATH:"/home/<username>/Android/Sdk/platform-tools" >> ~/.profile
+echo export PATH=$PATH:"/home/<username>/Android/Sdk/emulator" >> ~/.profile
+
+export PATH=${PATH}:/home/<username>/Android/Sdk/tools
+export PATH=${PATH}:/home/<username>/Android/Sdk/platform-tools
+
+
+echo export ANDROID_HOME=/home/<username>/Android/Sdk
+echo export PATH=$PATH:/home/<username>/Android/Sdk/platform-tools
+echo export PATH=$PATH:/home/<username>/Android/Sdk/emulator
+
+export ANDROID_HOME=/home/<username>/Android/Sdk/
+export PATH=$PATH:/home/<username>/Android/Sdk/tools
+export PATH=$PATH:/home/<username>/Android/Sdk/platform-tools
+export PATH=$PATH:/home/<username>/Android/Sdk/emulator
+export CAPACITOR_ANDROID_STUDIO_PATH=/home/<username>/Android/Sdk/
