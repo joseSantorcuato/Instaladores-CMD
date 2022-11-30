@@ -4,7 +4,7 @@ INSTALACIÓN DOCKER 2022
 Esta docuemntación permite instalar un container con ubuntu 22.04, Conda y label-studio.
 
 Comandos útiles, después de agregar al nuevo usuario puede dejar de ocuparse el sudo. 
-
+ 
     $ sudo docker info                           
     $ sudo docker ps                            
     $ sudo docker ps -l                             
@@ -157,6 +157,11 @@ LABEL STUDIO DOCKER
 
 e286539d3008   heartexlabs/label-studio:latest   "./deploy/docker-ent…"   24 minutes ago      Up 4 minutes                  0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   amazing_heisenberg
 
+~/anaconda3/envs/studio37/lib/python3.7/site-packages/label_studio/core/settings$ 
+
+docker start amazing_heisenberg
+
+docker exec -ti amazing_heisenberg /bin/bash //ya se podrá editar el base.py
 
 docker run --publish 8080:8080 heartexlabs/label-studio:latest
 
