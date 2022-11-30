@@ -1,0 +1,8 @@
+CREACIÓN LISTA PIP JUPYTER COLAB
+
+conda create -n jupyter37 python=3.7.15
+
+pip freeze > requirements.txt  // CREACIÓN
+
+pip install -r requirements.txt //INSTALACIÓN
+
