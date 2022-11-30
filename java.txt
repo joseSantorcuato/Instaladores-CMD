@@ -1,10 +1,16 @@
 
-INSTALACIÓN JAVA LINUX
-----------------------
+INSTALACIÓN JAVA JDK 18.0.2 LINUX
+---------------------------------
 
-sudo apt install ~/Downloads/jdk-19_linux-x64_bin.deb
+https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html
 
 sudo apt update
+
+sudo dpkg -i jdk-18.0.2_linux-x64_bin.deb
+
+sudo apt install libc6-i386
+
+sudo apt install libc6-x32
 
 sudo apt install oracle-java11-installer
 
@@ -14,8 +20,8 @@ sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-18/bin/
 
 sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk-18/bin/jar 1
 
-sudo update-alternatives --config java
+sudo update-alternatives --config java //seleccionar Java, generalmente 2
 
-sudo update-alternatives --config jar
+sudo update-alternatives --config javac
 
 sudo update-alternatives --config jar
