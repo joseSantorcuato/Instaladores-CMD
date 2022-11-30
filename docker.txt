@@ -1,6 +1,25 @@
 INSTALACIÓN DOCKER 2022
 =======================
 
+Esta docuemntación permite instalar un container con ubuntu 22.04, Conda y label-studio.
+
+Comandos útiles, después de agregar al nuevo usuario puede dejar de ocuparse el sudo. 
+
+    $ sudo docker info                           
+    $ sudo docker ps                            
+    $ sudo docker ps -l                             
+    $ sudo docker ps -a                              
+    $ sudo docker images                          
+    $ systemctl status docker                   
+    # sudo systemctl enable docker              
+    # sudo systemctl start docker                
+    $ sudo service docker stop                
+    $ sudo service docker start                 
+    $ sudo service docker restart  
+    $ docker start
+    $ docker stop
+    $ docker run
+    $ docker inspect            
 
 
 sudo apt-get install \
@@ -36,41 +55,123 @@ echo \
   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
-  sudo docker pull ubuntu:22.04
 
 
-  sudo docker run -it ubuntu:22.04
+  CREACIÓN DE USUARIO PARA EVITAR sudo
+  ====================================
+
+  sudo useradd ususario                             //sudo useradd -m usuario
+  
+  sudo passwd usuario
+
+  sudo usermod -aG docker usuario
+
+  newgrp docker
+
+  docker version
+
+  sudo systemctl status docker
+
+  docker run hello-world
+
+  docker search APP
+
+  
+
+docker rm $(docker ps -aq)   //eliminar todos
 
 
 
 
-EJECUTAR COINTAINER
+
+BAJAR IMAGEN
+============
+
+
+   docker pull ubuntu:22.04
+
+
+
+
+
+CREAR CONTENEDOR 
+================
+
+
+   docker run -i -t --name miubuntu ubuntu:22.04
+
+   docker run -i -t miubuntu
+
+   docker run -i -t ubuntu:22.04
+
+   docker run -i -t --name labels heartexlabs/label-studio:latest
+
+   docker start -i 59877312b6f0
+
+
+
+
+   INSTALAR SISTEMA, DETENER Y VOLVER A EJECUTAR CONTAINER
+   =======================================================
+
+
+
+   docker stop 59877312b6f0
+
+
+   docker start -i 59877312b6f0
+
+
+
+
+   REVISAR IP CONTENEDOR
+   =====================
+
+   docker inspect 59877312b6f0
+
+   
+   "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+
+
+
+NETWORK
+=======
+
+docker network create mi-puente
+
+docker run --name labelnet --net=mi-puente -d heartexlabs/label-studio:latest
+
+docker exec -it xx.xxx.xxx.xxx /bin/bash 
+
+
+
+LABEL STUDIO DOCKER
 ===================
 
-
-  sudo docker ps -a
-
-
-  sudo docker start 43534534657457
+e286539d3008   heartexlabs/label-studio:latest   "./deploy/docker-ent…"   24 minutes ago      Up 4 minutes                  0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   amazing_heisenberg
 
 
-  sudo docker attach 43534534657457
+docker run --publish 8080:8080 heartexlabs/label-studio:latest
+
+http://172.17.0.2:8080/user/login/
 
 
-  sudo docker inspect a434f7111f15 
+docker run -d -p 8080:8080 f19d6c1ebc8c
 
+docker run --publish 8080:8080 ubuntu:22.04
 
-  http://17X.1X.X.X:8XXX/user/login/
+docker run -it ffa0c7d60b8e
 
+docker run -it  charming_allen bash
 
-  sudo docker commit -m "se agrega conda" -a "miusuario" 43534534657457 miusuario/ubuntu-22
-
-
-  sudo docker login -u miusuario
-
-
-  docker tag usuariolocal/ubuntu-22 miusuario/ubuntu-22
-
+docker exec -it charming_allen bash
 
 
 ACTUALIZACIÓN UBUNTU
@@ -87,8 +188,6 @@ ACTUALIZACIÓN UBUNTU
 
 
   sudo apt install nano
-
-
 
 
 
