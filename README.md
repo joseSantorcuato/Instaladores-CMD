@@ -4,37 +4,9 @@
 
 ## ARCHIVOS
 
-Cada archivo corresponde a una tarea: Instalación de PYENV, Anaconda, módulos importantes, clonación de un ambiente tipo Colab para Jupyter, instalación de CUDA y gráficas NVIDIA y label studio, para etiquetado y anotaciones de datasets.
+Cada archivo corresponde a una tarea: Instalación de PYENV, Anaconda, dependencias para Jupyter para que sea compatible con Colab, clonación de un ambiente tipo Colab para Jupyter, instalación de CUDA y gráficas NVIDIA y label studio, para etiquetado y anotaciones de datasets.
 
-
-
-Un resumen, y los archivos más importantes son los de Anaconda y CUDA, ahí viene todo lo necesario, incluso la instalación de Jupyter.
-
-
-### Archivos
-
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Github
-* Permite hacer listas
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-```
-Otro más
-```
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-
-
-## Listas
-
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
-* [José Santorcuato T](https://github.com/joseSantorcuato) - Mi Guthub
-* Permite hacer listas
-
+También, se incluye instalación de Angular, FLutter, Capacitor, Java Oracle JDK y Android Studio para Linux y MacOS, para agregar las variables de entorno.
 
 
 
