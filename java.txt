@@ -6,11 +6,11 @@ https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html
 
 sudo apt update
 
-sudo dpkg -i jdk-18.0.2_linux-x64_bin.deb
-
 sudo apt install libc6-i386
 
 sudo apt install libc6-x32
+
+sudo dpkg -i jdk-18.0.2_linux-x64_bin.deb
 
 sudo apt install oracle-java11-installer
 
