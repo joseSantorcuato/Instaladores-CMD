@@ -1,0 +1,17 @@
+
+sudo apt install clang
+sudo apt install cmake
+
+sudo apt install libgtk-3-dev
+
+sudo nano ~/.profile
+
+
+export PATH="$PATH:/home/hackingml/flutter/bin"
+
+
+export ANDROID_HOME=/home/hackingml/Android/Sdk
+export PATH=$PATH:/home/hackingml/Android/Sdk/platform-tools
+export PATH=$PATH:/home/hackingml/Android/Sdk/emulator
+
+

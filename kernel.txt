@@ -1,0 +1,77 @@
+
+//KERNELS
+https://linux.how2shout.com/how-to-install-linux-kernal-5-19-on-ubuntu-22-04-or-20-04/
+https://docs.digitalocean.com/products/droplets/how-to/kernel/use-non-default/
+
+
+//LISTADO
+
+dpkg --list | grep linux-image
+
+sudo apt update && sudo apt upgrade
+
+sudo apt install git wget curl
+
+wget https://raw.githubusercontent.com/pimlie/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh
+
+chmod +x ubuntu-mainline-kernel.sh
+
+
+sudo mv ubuntu-mainline-kernel.sh /usr/local/bin/
+
+
+ubuntu-mainline-kernel.sh -c
+
+
+//VER KERNELS DISPONIBLES
+
+ubuntu-mainline-kernel.sh -r
+
+v5.19.13
+
+//INSTALAR KERNELS
+
+sudo ubuntu-mainline-kernel.sh -i v5.19.13
+
+//sudo ubuntu-mainline-kernel.sh -i
+
+
+//VER KERNELS 
+
+sudo ubuntu-mainline-kernel.sh -l
+
+
+
+
+//EDICIÓN GRUBS
+
+sudo nano /etc/default/grub
+
+
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+GRUB_DISABLE_SUBMENU=y
+
+export GRUB_CONFIG=`sudo find /boot -name "grub.cfg"`
+
+
+sudo update-grub
+
+sudo grep 'menuentry ' $GRUB_CONFIG | cut -f 2 -d "'" | nl -v 0
+
+sudo grub-set-default 2
+
+sudo grub-reboot 2
+
+
+//HOLD KERNEL
+
+sudo apt-mark hold 5.19.13-051913-generic
+
+
+//ELIMINAR KERNEL
+
+sudo apt-get remove linux-image-6.2.0-26-generic
+sudo apt purge linux-image-6.2.0-26-generic
+
+
